@@ -39,3 +39,15 @@ button {
 #save-btn {
     background: darkgreen;
 }
+
+#save-el {
+    margin-left: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    background: gray;
+    font-size: x-large;
+    color: rgb(250, 252, 252);
+}
