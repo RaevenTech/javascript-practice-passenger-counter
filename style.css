@@ -38,6 +38,12 @@ button {
 
 #save-btn {
     background: darkgreen;
+    margin-right: 2px;
+}
+
+#reset-btn {
+    background: rgb(223, 200, 0);
+    margin-left: 5px;
 }
 
 #save-el {

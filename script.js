@@ -4,15 +4,15 @@ let count = 0;
 
 function increment() {
     count += 1;
-    countEl.innerText = count;
+    countEl.textContent = count;
 }
 function decrement() {
     count = count - 1;
-    countEl.innerText = count;
+    countEl.textContent = count;
 }
 
 function save() {
     let countReg = count + " - ";
-    saveEl.innerText += countReg;
+    saveEl.textContent += countReg;
     console.log(count);
 }
