@@ -11,6 +11,10 @@ function decrement() {
     countEl.textContent = count;
 }
 
+const reset = () => {
+    count = 0;
+};
+
 function save() {
     let countReg = count + " - ";
     saveEl.textContent += countReg;
