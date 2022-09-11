@@ -8,15 +8,19 @@
         <title>Document</title>
     </head>
     <body>
-        <h1>People entered:</h1>
-        <h2 id="count-el">0</h2>
-        <button id="increment-btn" onclick="increment()">INCREMENT</button>
-        <button id="decrement-btn" onclick="decrement()">DECREMENT</button>
-        <div>
-            <button id="save-btn" onclick="save()">SAVE</button
-            ><button id="reset-btn" onclick="save()">RESET</button>
+        <div class="main">
+            <h1>People counter:</h1>
+            <h2 id="count-el">0</h2>
+            <button id="increment-btn" onclick="increment()">INCREMENT</button>
+            <button id="decrement-btn" onclick="decrement()">DECREMENT</button>
+            <div>
+                <button id="save-btn" onclick="save()">SAVE</button>
+            </div>
+            <p id="save-el">
+                <span class="count_title">Previous entries:</span>
+            </p>
+            <button id="reset-btn" onclick="reset()">RESET</button>
         </div>
-        <p id="save-el">Previous entries:</p>
         <script src="script.js"></script>
     </body>
 </html>
