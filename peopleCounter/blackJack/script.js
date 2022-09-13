@@ -1,27 +1,28 @@
 let firstCard = 10;
 let secondCard = 7;
-let thirdCard = 5;
+let thirdCard = 3;
 let cardCount = firstCard + secondCard + thirdCard;
 
 let hasBlackjack = false;
 let stillActive = true;
 
 let message = "";
+let messageEl = document.getElementById("message_el");
+let countEl = document.querySelector("#count_el");
 
-if (cardCount <= 20) {
-    message = "Do you want another card?";
-    stillActive = true;
-} else if (cardCount === 21) {
-    message = "Wohoo! You have Blackjack!!";
-    if ((hasBlackjack = true)) {
-        message = " You won! Would you like to play again?";
+function startGame() {
+    if (cardCount <= 20) {
+        countEl.textContent += " " + cardCount;
+        message = "Do you want to draw another card?";
+        stillActive = true;
+    } else if (cardCount === 21) {
+        countEl.textContent += " " + cardCount;
+        message = "You have Blackjack!!";
+        hasBlackjack = true;
+    } else {
+        countEl.textContent += " " + cardCount;
+        message = "BUST! You are out of the game!";
+        stillActive = false;
     }
-} else {
-    message = "BUST! You are out of the game!";
-    if ((stillActive = false)) {
-        message = "Would you like to play another hand?";
-    }
+    messageEl.textContent = message;
 }
-console.log(message);
-console.log(cardCount);
-console.log(stillActive);
