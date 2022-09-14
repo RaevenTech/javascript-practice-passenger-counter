@@ -3,7 +3,7 @@
     display: flex; 
     flex-direction: column;
     align-items: center;
-    background-image: url(https://media.istockphoto.com/photos/green-poker-background-picture-id453187915?k=20&m=453187915&s=612x612&w=0&h=yDGWRSaErS7B6MPaJ8g9PyaH0JqwGk4IfwnKpnsNYEQ=);
+    background-image: url(https://apostalegal.com/wp-content/uploads/2020/09/como-jogar-blackjack-online.jpg);
     background-size: cover;
    
     
@@ -14,8 +14,9 @@
     box-shadow: 2px 4px 6px black;
     border: 10px solid rgb(100, 85, 69);
     border-radius: 20px;
-    margin-top: 300px;
-    width: 40%;
+    margin-top: 250px;
+    width: 30%;
+    margin-right: 700px;
     height: fit-content;
     color:white;
     display: flex;
@@ -23,6 +24,7 @@
     align-items: center;
     justify-content: center;
     background-image: url(https://media.istockphoto.com/vectors/poker-table-background-in-green-color-vector-id1218355494?k=20&m=1218355494&s=612x612&w=0&h=7izk2bQU_LDnKLLLbwAolAo4kwUmcwr_mo8_Vr7955w=);
+    background-size: cover;
  }
  h1 {
     color: goldenrod;
@@ -42,4 +44,8 @@
     padding: 5px 10px;
     background: goldenrod;
     margin-bottom: 10px;
+}
+.play_btn:hover {
+   background: rgb(250, 190, 37);
+   font-weight: bold;
 }
