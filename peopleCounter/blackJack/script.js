@@ -1,5 +1,5 @@
-let firstCard = 10;
-let secondCard = 7;
+let firstCard = getRandomCard();
+let secondCard = getRandomCard();
 
 let cardCount = firstCard + secondCard;
 let cards = [firstCard, secondCard];
@@ -13,10 +13,16 @@ let countEl = document.querySelector("#count_el");
 let cardsEl = document.getElementById("cards_el");
 
 function startGame() {
+    //function for start game btn
     renderGame();
 }
 
+function getRandomCard() {
+    return 5;
+}
+
 function renderGame() {
+    // functionn that controle the game rendering between lines 23-43
     cardsEl.textContent = "Cards: ";
 
     for (let i = 0; i < cards.length; i++) {
@@ -39,8 +45,9 @@ function renderGame() {
 }
 
 function newCard() {
+    // function for drawing a new random card Btn
     messageEl.textContent = "Drawing a new card from the deck!";
-    let card = 2;
+    let card = getRandomCard();
     cardCount += card;
     cards.push(card);
     renderGame();
