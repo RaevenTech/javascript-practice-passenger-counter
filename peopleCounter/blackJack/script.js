@@ -17,19 +17,21 @@ function startGame() {
 }
 
 function renderGame() {
+    cardsEl.textContent = "Cards: ";
+
+    for (let i = 0; i < cards.length; i++) {
+        cardsEl.textContent += " " + cards[i];
+    }
+
+    countEl.textContent = "Count: " + cardCount;
+
     if (cardCount <= 20) {
-        cardsEl.textContent = "Cards: " + cards[0] + " + " + cards[1];
-        countEl.textContent = "Count: " + cardCount;
         message = "Do you want to draw another card?";
         stillActive = true;
     } else if (cardCount === 21) {
-        cardsEl.textContent = "Cards: " + firstCard + " + " + secondCard;
-        countEl.textContent = "Count: " + cardCount;
         message = "Blackjack!! YOU WIN!!";
         hasBlackjack = true;
     } else {
-        cardsEl.textContent = "Cards: " + firstCard + " + " + secondCard;
-        countEl.textContent = "Count: " + cardCount;
         message = "BUST! You are out of the game!";
         stillActive = false;
     }
