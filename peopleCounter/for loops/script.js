@@ -5,13 +5,13 @@
 // What's the STEP SIZE we should use?
 //    START           FINISH       STEP SIZE
 for (let count = 1; count < 11; count += 1) {
-    console.log(count);
+    //console.log(count);
 }
 //------------------------------------------------------------------------------
 
 // Create a for loop that counts from 10 to 100 in steps of 10
 for (let count1 = 10; count1 < 101; count1 += 10) {
-    console.log(count1);
+    //console.log(count1);
 }
 
 //------------------------------------------------------------------------------
@@ -20,7 +20,7 @@ let cards = [7, 3, 9];
 // Create a for loop that logs out all the cards in the array
 // Use cards.length to specify how long the loop should
 for (let i = 0; i < cards.length; i++) {
-    console.log(cards[i]);
+    //console.log(cards[i]);
 }
 //-----------------------------------------------------------------------------
 
@@ -41,6 +41,26 @@ The 5 largest countries in the world:
 - Indinesia
 - Pakistan
 */
+console.log(" The 5 largest countries in the world ");
 for (let i = 0; i < largeCountries.length; i++) {
-    console.log(largeCountries[i]);
+    let country = largeCountries[i];
+    //console.log(" - " + country);
 }
+// or can be done like this
+console.log("The 5 largest countries in the world");
+for (let i = 0; i < largeCountries.length; i++) {
+    //console.log("-" + largeCountries[i]);
+}
+//-----------------------------------------------------------------------------
+let largeCountries1 = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"];
+
+// You need to help me fixup the largeCountries array so that
+// China and Pakistan are added back into their respective places
+// Use push() & pop() and their counterparts unshift() & shift()
+// Google how to use unshift() and shift()
+largeCountries1.pop();
+largeCountries1.push("Pakistan");
+largeCountries1.shift();
+largeCountries1.unshift("China");
+
+console.log(largeCountries1);
