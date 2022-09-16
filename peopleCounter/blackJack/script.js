@@ -8,6 +8,13 @@ let message = "";
 let messageEl = document.getElementById("message_el");
 let countEl = document.querySelector("#count_el");
 let cardsEl = document.getElementById("cards_el");
+let playerEl = document.getElementById("player_el");
+
+let player = {
+    name: "Raeven",
+    chips: 345,
+};
+playerEl.textContent = player.name + " -- " + " € " + player.chips;
 
 function getRandomCard() {
     let randomCard = Math.floor(Math.random() * 13) + 1;
