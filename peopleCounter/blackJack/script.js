@@ -57,9 +57,10 @@ function renderGame() {
 
 // function for drawing a new random card Btn
 function newCard() {
-    messageEl.textContent = "Drawing a new card from the deck!";
-    let card = getRandomCard();
-    cardCount += card;
-    cards.push(card);
-    renderGame();
+    if (isPlayerActive === true && hasBlackjack === false) {
+        let card = getRandomCard();
+        cardCount += card;
+        cards.push(card);
+        renderGame();
+    }
 }
