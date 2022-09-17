@@ -1,0 +1,18 @@
+#apple_shelf {
+    background: rgb(254, 152, 152);
+    border-radius: 10px;
+    height: 30px;
+    margin: 10px 0;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+#orange_shelf {
+    background: rgb(255, 189, 163);
+    border-radius: 10px;
+    height: 30px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
