@@ -1,5 +1,6 @@
-let inputBtn = document.getElementById("box");
+let openBox = document.getElementById("box");
 
-inputBtn.addEventListener("click", function () {
-    console.log("box clicked");
+openBox.addEventListener("click", function () {
+    console.log("I want to open the box!");
 });
+//---------------------------------------------------------
