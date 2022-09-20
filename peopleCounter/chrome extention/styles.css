@@ -29,7 +29,11 @@ input {
     height: 28px;
     padding: 10px;
     box-sizing: border-box;
-    border:1px solid #5f9341
+    border:2px solid #5f9341;
+    
+}
+input:focus {
+    border: none;
 }
 
 button {

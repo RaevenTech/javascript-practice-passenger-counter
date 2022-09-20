@@ -1,4 +1,4 @@
-let myLeads = ["www.awesomelead.com", "www.epiclead.com", "www.greatlead.com"];
+let myLeads = [];
 
 const saveBtn = document.getElementById("save_input_btn");
 const inputEl = document.getElementById("input_el");
@@ -8,17 +8,20 @@ let ulEl = document.getElementById("ul_el");
 // Push the value from the inputEl into the myLeads array
 saveBtn.addEventListener("click", function () {
     myLeads.push(inputEl.value);
-    console.log(myLeads);
+    inputEl.value = "";
+    return renderLeads();
+    //console.log(myLeads);
 });
 
 // Log out the items in the myLeads array using a for loop
 // Render the leads in the unordered list using ulEl.innerHTML
-let listItems = [];
-for (let i = 0; i < myLeads.length; i++) {
-    listItems += "<li>" + myLeads[i] + "</li>";
-    console.log(listItems);
+function renderLeads() {
+    let listItems = "";
+    for (let i = 0; i < myLeads.length; i++) {
+        listItems += "<li>" + myLeads[i] + "</li>";
+        ulEl.innerHTML = listItems;
+    }
 }
-ulEl.innerHTML = listItems;
 
 // line 27 to 29 is the same as line 16
 
