@@ -57,3 +57,13 @@ button {
     list-style-type: none;
 }
 
+ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+a:link {
+    color:#296e01;
+    text-decoration: none;
+}
+
