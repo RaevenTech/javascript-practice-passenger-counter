@@ -5,12 +5,17 @@ const inputEl = document.getElementById("input_el");
 let ulEl = document.getElementById("ul_el");
 //console.log(inputEl);
 
+// Get the leads from the localStorage
+let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
+console.log(leadsFromLocalStorage);
+
 // Push the value from the inputEl into the myLeads array
 saveBtn.addEventListener("click", function () {
     myLeads.push(inputEl.value);
     inputEl.value = "";
+    localStorage.setItem("myLeads", JSON.stringify(myLeads));
+    console.log(localStorage.getItem("myLeads"));
     return renderLeads();
-    //console.log(myLeads);
 });
 
 // Log out the items in the myLeads array using a for loop
@@ -23,7 +28,7 @@ function renderLeads() {
     }
 }
 
-// line 27 to 29 is the same as line 16
+// line 31 to 33 is the same as line 16
 
 /*  // create element
     // set text content
