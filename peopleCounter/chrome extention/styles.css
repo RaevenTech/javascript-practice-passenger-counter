@@ -24,8 +24,8 @@ main {
     margin-bottom: 10px;
 }
 input {
-    width: 80%;
-    height: 28px;
+    width: 85%;
+    height: 30px;
     padding: 10px;
     box-sizing: border-box;
     border:2px solid #5f9341;
@@ -33,6 +33,10 @@ input {
 }
 input:focus {
     border: none;
+}
+.btns {
+    display: flex;
+    gap: 5px;
 }
 
 button {
@@ -42,9 +46,21 @@ button {
     border: none;
     padding: 6px 10px;
     background:#296e01;
+    border: #296e01 solid 1px;
     margin-top: 10px;
     border-radius: 5px;
     letter-spacing: 1px;
+}
+ #save_input_btn:hover {
+   color:#84e64c;
+ }
+
+#del_input_btn {
+    color:#296e01;
+    background: transparent;
+}
+#del_input_btn:hover  {
+    color:#84e64c;
     
 }
 

@@ -1,13 +1,27 @@
 let myLeads = [];
 
 const saveBtn = document.getElementById("save_input_btn");
+const delBtn = document.getElementById("del_input_btn");
 const inputEl = document.getElementById("input_el");
-let ulEl = document.getElementById("ul_el");
-//console.log(inputEl);
+const ulEl = document.getElementById("ul_el");
 
 // Get the leads from the localStorage
-let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
-console.log(leadsFromLocalStorage);
+const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"));
+
+// 1. Check if leadsFromLocalStorage is truthy
+// 2. If so, set myLeads to its value and call renderLeads()
+if (leadsFromLocalStorage) {
+    myLeads = leadsFromLocalStorage;
+    renderLeads();
+}
+
+// 1. Listen for double clicks on the delete button
+del_input_btn.addEventListener("dblclick", function () {
+    // 3. When clicked, clear localStorage, myLeads, and the DOM
+    localStorage.clear();
+    myLeads = [];
+    renderLeads();
+});
 
 // Push the value from the inputEl into the myLeads array
 saveBtn.addEventListener("click", function () {
