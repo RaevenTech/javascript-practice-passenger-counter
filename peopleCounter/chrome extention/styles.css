@@ -54,16 +54,21 @@ button {
     letter-spacing: 1px;
 }
  #save_input_btn:hover {
-   color:#84e64c;
+    color: black;
+    background: #3e722e;
  }
 
-#del_input_btn {
-    color:#296e01;
-    background: transparent;
+#del_all_btn {
+    color:black;
+    font-weight: bold;
 }
-#del_input_btn:hover  {
+#del_all_btn:hover  {
     color:#f34d4d;
-    
+    background: #000;
+}
+#save_url_btn:hover {
+    color: black;
+    background: #3e7220;
 }
 
 #ul_el {
@@ -87,7 +92,7 @@ ul {
 
 a:link {
     color:#296e01;
-    text-decoration: none;
+    
 }
 
 #warning_el {
