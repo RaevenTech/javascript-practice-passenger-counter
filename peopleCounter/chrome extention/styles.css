@@ -7,6 +7,7 @@ body {
 }
 
 main {
+    position: relative;
     border: 5px solid rgb(16, 110, 1);
     width: fit-content;
     display:flex;
@@ -20,8 +21,9 @@ main {
 }
 
 .title {
-    margin-top: 0px;
-    margin-bottom: 10px;
+    
+    margin: 5px 20px 10px 20px;
+
 }
 input {
     width: 85%;
@@ -60,15 +62,16 @@ button {
     background: transparent;
 }
 #del_input_btn:hover  {
-    color:#84e64c;
+    color:#f34d4d;
     
 }
 
 #ul_el {
+    margin: 0px;
     color: whitesmoke;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-items: center;
     padding: 10px 40px 10px 0px;
     list-style-type: none;
 }
@@ -76,6 +79,10 @@ button {
 ul {
     list-style-type: none;
     padding-left: 0px;
+    margin-top: 15px;
+}
+#ul_el {
+    margin-top: 15px;
 }
 
 a:link {
@@ -83,3 +90,14 @@ a:link {
     text-decoration: none;
 }
 
+#warning_el {
+    top:0;
+    left:10;
+    
+    position:absolute;
+    margin-top: 5px;
+    justify-items: center;
+    color:red;
+    font-style: italic;
+  
+}
