@@ -17,13 +17,12 @@ if (leadsFromLocalStorage) {
     render(myLeads);
 }
 
-const tabs = [{ url: "https://www.linkedin.com/in/per-harald-borgen/" }];
-
 saveTab.addEventListener("click", function () {
-    myLeads.push(tabs[0].url);
-    localStorage.setItem("myleads", JSON.stringify(myLeads));
-    console.log(myLeads);
-    render(myLeads);
+    chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
+        myLeads.push(tabs[0].url);
+        localStorage.setItem("myLeads", JSON.stringify(myLeads));
+        render(myLeads);
+    });
 });
 
 // Log out the items in the myLeads array using a for loop
