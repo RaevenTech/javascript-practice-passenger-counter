@@ -25,3 +25,16 @@ let raceTime = totalRaceTime();
 console.log(raceTime);
 
 //--------------------------------------------------------------------------------------------------
+// Challenge:
+// Round the price in the button down to two decimal places.
+// Don't know which method to use? Google it!
+
+const totalPrice = 420.69235632455;
+const btn = document.getElementById("purchase-btn");
+btn.textContent = `Buy €${totalPrice.toFixed(2)}`;
+
+// converting the a string into a number for the .toFixed to work
+
+const totalPrice1 = "420.69235632455";
+const btn = document.getElementById("buy-btn");
+btn.textContent = `Buy €${Number(totalPrice1).toFixed(2)}`;
