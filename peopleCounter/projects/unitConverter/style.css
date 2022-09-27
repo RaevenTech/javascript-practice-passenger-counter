@@ -5,9 +5,10 @@ body {
     font-family: 'Inter', sans-serif;
     background-image: url(https://blog.bricsys.com/wp-content/uploads/2019/06/header_temp-1280x720.jpg);
     background-size: cover;
+    
 }
 #main_container {
-   
+   border: #CCC1FF 5px solid;
     display: flex;
     margin: 50px auto;
     flex-direction: column;
@@ -38,17 +39,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 117px;
+    min-width: 117px;
+    max-width: fit-content;
     height: 83px;
     border: 2px solid white;
     border-radius: 5px;
 }
 #input_el {
+    background: transparent;
+    width: 150px;
+    max-width: fit-content;
     margin: 0px;
- color:#FFF;
-
- font-size: 60px;
- font-weight: 800;
+     color:#FFF;
+     box-sizing: border-box;
+     padding-left: 10px;
+     font-size: 60px;
+     font-weight: 800;
+     border:none ;
+}
+input:focus{
+    outline: none;
 }
 .subtitle {
     margin:0px;
