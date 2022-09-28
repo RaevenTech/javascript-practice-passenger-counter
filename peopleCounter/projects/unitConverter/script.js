@@ -8,7 +8,6 @@ const clearBtn = document.getElementById("clear_btn");
 const meterToFeet = 3.281;
 const literToGallon = 0.264;
 const kiloToPound = 2.204;
-let inputValue = "0";
 
 converBtn.addEventListener("click", function () {
     let inputValue = inputEl.value;
@@ -28,9 +27,4 @@ converBtn.addEventListener("click", function () {
     ).toFixed(3)} pounds | ${inputValue} pounds = ${(
         inputValue / kiloToPound
     ).toFixed(3)} kilos`;
-});
-
-const clearedValue = 0;
-clearBtn.addEventListener("click", function () {
-    inputEl.innerHTML = "";
 });
