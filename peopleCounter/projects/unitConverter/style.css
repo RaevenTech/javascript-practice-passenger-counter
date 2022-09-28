@@ -52,7 +52,7 @@ body {
     margin: 0px;
      color:#FFF;
      box-sizing: border-box;
-     padding-left: 10px;
+     padding-left: 20px;
      font-size: 60px;
      font-weight: 800;
      border:none ;
@@ -71,7 +71,20 @@ input:focus{
     font-weight: 500;
 }
 #convert_btn:hover {
-    transition: scale;
+    background-color: #1f2937;
+    color: #CCC1FF;
+}
+#clear_btn {
+    padding: 10px 10px;
+    border-radius: 5px;
+    border: none ;
+    margin-left: 10px;
+    color: #CCC1FF;
+    background-color: #273549;
+}
+#clear_btn:hover {
+    background-color:whitesmoke ;
+    color: #1f2937;
 }
 #bottom_container {
     padding:  40px 25px;
