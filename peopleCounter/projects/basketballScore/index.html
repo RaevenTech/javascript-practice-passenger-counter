@@ -10,8 +10,8 @@
     <body>
         <div class="container">
             <!----- home team ---->
-            <section class="">
-                <h3>Home</h3>
+            <section class="team_board">
+                <h3 class="team">Home</h3>
                 <div class="">
                     <h1 id="home_score_el" class="home_score">0</h1>
                 </div>
@@ -22,13 +22,13 @@
                         +3
                     </button>
                 </div>
-                <div>
+                <div class="reset_btn_el">
                     <button id="reset_btn" onclick="resetHome()">Reset</button>
                 </div>
             </section>
             <!----- Away team ---->
-            <section class="">
-                <h3>Away</h3>
+            <section class="team_board">
+                <h3 class="team">Away</h3>
                 <div class="">
                     <h1 id="away_score_el" class="home_score">0</h1>
                 </div>
@@ -37,7 +37,7 @@
                     <button class="home_two" onclick="addTwo()">+2</button>
                     <button class="home_three" onclick="addThree()">+3</button>
                 </div>
-                <div>
+                <div class="reset_btn_el">
                     <button id="reset_btn" onclick="resetAway()">Reset</button>
                 </div>
             </section>

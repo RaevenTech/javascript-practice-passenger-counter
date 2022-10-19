@@ -1,6 +1,6 @@
 body {
     display: flex;
-    padding-top: 120px;
+    padding-top: 250px;
     justify-content: center;
     align-items: center;
     background-image: url("https://pixy.org/download/8345/");
@@ -12,16 +12,18 @@ body {
 }
 
 .main {
-    background: rgba(128, 128, 128, 0.521);
+    background: rgba(128, 128, 128, 0.678);
     padding: 100px 50px;
     width: 400px;
     height: 400px;
     border-radius: 15px;
+    box-shadow: inset 2px 5px 15px rgb(17, 17, 17);
 }
 
 h1 {
     margin-top: 10px;
     margin-bottom: 10px;
+    text-decoration: underline;
 }
 
 h2 {
@@ -43,17 +45,17 @@ button {
 
 #increment-btn {
     background: rgb(223, 200, 0);
-    box-shadow: 15px 5px 10px rgb(0, 0, 0);
+    box-shadow: 2px 2px 10px rgb(86, 86, 86);
 }
 #decrement-btn {
     background: rgb(14, 0, 139);
-    box-shadow: 15px 5px 10px rgb(0, 0, 0);
+    box-shadow: 2px 2px 10px rgb(246, 246, 246);
 }
 
 #save-btn {
     background: darkgreen;
-   
-    box-shadow: 15px 5px 10px rgb(0, 0, 0);
+   margin-top:10px;
+    box-shadow: 2px 2px 10px rgb(242, 242, 242);
 }
 
 #reset-btn {
@@ -63,7 +65,7 @@ button {
     border-radius: 50%;
     font-weight: 500;
     font-size: x-large;
-    box-shadow: 15px 5px 10px rgb(0, 0, 0);
+    box-shadow: 2px 2px 10px rgb(244, 244, 244);
 }
 
 #save-el {
